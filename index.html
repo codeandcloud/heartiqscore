@@ -8,78 +8,38 @@
     <title>Heart IQ Score – Coming Soon</title>
     <link rel="icon"
           href="favicon.ico" />
-    <style>
-        :root {
-            --gold: #c9a25d;
-            /* matches logo gold */
-            --dark: #4a4a4a;
-            /* logo charcoal */
-            --light: #ffffff;
-            --muted: #8a8a8a;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--light);
-            color: var(--dark);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        main {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-        }
-
-        .logo {
-            max-width: 420px;
-            width: 80%;
-            margin-bottom: 2.5rem;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            letter-spacing: 0.15em;
-            color: var(--gold);
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        .subtitle {
-            font-size: 1rem;
-            color: var(--muted);
-            max-width: 520px;
-            line-height: 1.6;
-        }
-
-        footer {
-            width: 100%;
-            padding: 1rem;
-            font-size: 0.85rem;
-            color: var(--muted);
-            border-top: 1px solid #eee;
-        }
-    </style>
+    <link rel="stylesheet"
+          href="app.css" />
 </head>
 
 <body>
+    <button class="theme-toggle"
+            type="button"
+            aria-pressed="true"
+            aria-label="Toggle dark mode">
+        <span class="theme-toggle__icon"
+              aria-hidden="true">
+            <svg class="icon-sun"
+                 viewBox="0 0 24 24"
+                 role="presentation">
+                <circle cx="12"
+                        cy="12"
+                        r="4"></circle>
+                <path
+                      d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41">
+                </path>
+            </svg>
+            <svg class="icon-moon"
+                 viewBox="0 0 24 24"
+                 role="presentation">
+                <path d="M21 14.5A9 9 0 0 1 9.5 3a7.5 7.5 0 1 0 11.5 11.5z"></path>
+            </svg>
+        </span>
+        <span class="theme-toggle__label">LIGHT</span>
+    </button>
 
     <main>
-        <img src="heart-iq-score-logo_1250x625.png"
+        <img src="heart-iq-score-logo-transparent.png"
              alt="HeartIQ Score Logo"
              class="logo" />
 
@@ -94,6 +54,8 @@
     <footer>
         © 2026 Swizton MedTech. All rights reserved.
     </footer>
+
+    <script src="app.js"></script>
 
 </body>
 
