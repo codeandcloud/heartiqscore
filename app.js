@@ -14,10 +14,10 @@ const applyThemeState = (isDark) => {
     }
 };
 
-if (savedTheme === "light") {
-    applyThemeState(false);
-} else {
+if (savedTheme === "dark") {
     applyThemeState(true);
+} else {
+    applyThemeState(false);
 }
 
 themeToggle.addEventListener("click", () => {
